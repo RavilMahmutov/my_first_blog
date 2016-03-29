@@ -1,9 +1,12 @@
 
-
+body{
+	background-color: #dcdcdc; 
+}
 
 .page-header {
         background-color: #006400;
         margin-top: 0;
+        margin-bottom: 0;
         padding: 20px 20px 20px 40px;
     }
 
@@ -14,7 +17,8 @@
     }
 
 .content {
-        margin-left: 40px;
+        width: 800px;
+        background-color: #ffffff; 
     }
 
 h1, h2, h3, h4 {
@@ -42,7 +46,10 @@ h1, h2, h3, h4 {
     }
 
 .post {
-        margin-bottom: 70px;
+		width: 760px;
+
+        margin-bottom: 50px;
+        border-bottom: 1px solid #dcdcdc;
     }
 
 .post h1 a, .post h1 a:visited {
