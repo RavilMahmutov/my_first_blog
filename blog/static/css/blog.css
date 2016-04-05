@@ -1,6 +1,7 @@
 
-body{
+html, body{
 	background-color: #dcdcdc; 
+    height: 100%;
 }
 
 .page-header {
@@ -19,7 +20,7 @@ body{
 
 .content {
         width: 793px;
-        height: 100vh;
+        height: 100%;
         background-color: #ffffff; 
 
     }
