@@ -1,6 +1,6 @@
 
 html, body{
-	background-color: #dcdcdc; 
+    background-color: #F8f8ff;
     height: 100%;
 }
 
@@ -23,6 +23,7 @@ html, body{
         height: auto;
         min-height: 100%;
         background-color: #ffffff; 
+
 
     }
 
