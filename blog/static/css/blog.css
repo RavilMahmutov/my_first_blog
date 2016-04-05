@@ -4,7 +4,7 @@ body{
 }
 
 .page-header {
-        background-color: #006400;
+        background-color: #ff4500;
         margin-top: 0;
         margin-bottom: 0;
         padding: 20px 20px 20px 40px;
@@ -19,7 +19,9 @@ body{
 
 .content {
         width: 800px;
+        height: 100%;
         background-color: #ffffff; 
+
     }
 
 h1, h2, h3, h4 {
@@ -39,18 +41,29 @@ h1, h2, h3, h4 {
         width: 100%;
     }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
+.top-menu{
         color: #ffffff;
         float: right;
         font-size: 26pt;
         margin-right: 20px;
+        margin-top: 30px; 
+        font-family: 'Lobster', cursive;
     }
+
+.user-name{
+    font-size: 16pt;
+    font-family: 'Lobster', cursive;
+    margin-top: 40px;
+}
+
+.user-name a{
+    margin-left: 10px;
+}
 
 .post {
 		width: 760px;
-
         margin-bottom: 50px;
-        border-bottom: 1px solid #dcdcdc;
+        border-bottom: 3px solid #808080;
     }
 
 .post h1 a, .post h1 a:visited {
@@ -59,4 +72,12 @@ h1, h2, h3, h4 {
 
 .comment {
     margin: 20px 0px 20px 20px;
+}
+
+.comment-count {
+    margin-top: 40px;
+}
+
+.comment-count a{
+    color: #808080;
 }
