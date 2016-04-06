@@ -5,7 +5,7 @@ html, body{
 }
 
 .page-header {
-        background-color: #ffa07a;
+        background-color: #000000;
         margin-top: 0;
         margin-bottom: 0;
         padding: 20px 20px 20px 40px;
@@ -75,6 +75,8 @@ h1, h2, h3, h4 {
 
 .comment {
     margin: 20px 0px 20px 20px;
+    border-bottom: 1px solid #808080;
+    width: 730px;
 }
 
 .comment-count {
@@ -83,4 +85,16 @@ h1, h2, h3, h4 {
 
 .comment-count a{
     color: #808080;
+}
+
+.post-button{
+        display: inline-block;
+        margin-left: 5px;
+        margin-top: 20px;
+        color: #808080;
+}
+
+
+.last-div-inlogin{
+    margin-bottom: 20px;
 }

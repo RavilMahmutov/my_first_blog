@@ -9,14 +9,14 @@
 		{% else %}
 			<a class="btn btn-default" href="{% url 'blog.views.post_publish' pk=post.pk %}">Опубликовать</a>	
 		{% endif %}
-		{% if user.is_authenticated %}
-			<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">Редактировать</a>
-			<a  class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}">Удалить</a>
-		{% endif %}
 		<h1>{{ post.title }}</h1>
 		<p>{{ post.text|linebreaks }}</p>
+		{% if user.is_authenticated %}
+		<h3 class="author">Автор: {{ post.author }}</h3>
+			<a href="{% url 'post_edit' pk=post.pk %}"><span class="post-button glyphicon glyphicon-pencil post-button"></span></a>
+			<a href="{% url 'post_remove' pk=post.pk %}"><span class="post-button glyphicon glyphicon-trash post-button"></span></a>
+		{% endif %}
 	</div>
-	<a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Добавить комментарий</a>
 	{% for comment in post.comments.all %}
 		<div class="comment">
 			<div class="date">{{ comment.created_date }}</div>
@@ -26,4 +26,5 @@
 	{% empty %}
 		<p> Комментарии отсутствуют</p>
 	{% endfor %}
+	<a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Добавить комментарий</a> 
 {% endblock %}
