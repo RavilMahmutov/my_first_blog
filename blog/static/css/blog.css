@@ -98,3 +98,16 @@ h1, h2, h3, h4 {
 .last-div-inlogin{
     margin-bottom: 20px;
 }
+
+
+.btngroup{
+    margin-left: 50%;
+}
+.pagenumber{
+    font-family: 'Lobster';
+    font-size: 30px;
+    margin: 0px 20px;
+}
+.pagerbutton{
+    color: black;
+    font-size: 18px;

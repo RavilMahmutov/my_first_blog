@@ -14,20 +14,16 @@
 		</div>
 	{% endfor %}
 
-<div class="pagination">
-	<span class="step-links">
-		{% if posts_page.has_previous %}
-			<a href="?page={{ posts_page.previous_page_yunber }}">Назад</a>
-		{% endif %}
+<div class="btngroup">
+			<a href="?page={{ posts_page.previous_page_yunber }}"><span class="glyphicon glyphicon-chevron-left   pagerbutton"></span></a>
 
-		<span class="current">
+		<span class="pagenumber">
 			{{ posts_page.number }}		
 		</span>
 		
 		{% if posts_page.has_next %}
-			<a href="?page={{ posts_page.next_page_number }}">Вперед</a>
+			<a href="?page={{ posts_page.next_page_number }}"><span class="glyphicon glyphicon-chevron-right pagerbutton"></span></a>
 		{% endif %}
-	</span>
 </div>
 
 
