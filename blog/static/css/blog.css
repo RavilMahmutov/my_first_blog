@@ -101,12 +101,12 @@ h1, h2, h3, h4 {
 
 
 .btngroup{
-    margin-left: 50%;
+    margin-left: 271px;
 }
 .pagenumber{
     font-family: 'Lobster';
     font-size: 30px;
-    margin: 0px 20px;
+    margin: 0px 10px;
 }
 .pagerbutton{
     color: black;
