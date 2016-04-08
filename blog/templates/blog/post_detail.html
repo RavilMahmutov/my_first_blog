@@ -10,6 +10,9 @@
 			<a class="btn btn-default" href="{% url 'blog.views.post_publish' pk=post.pk %}">Опубликовать</a>	
 		{% endif %}
 		<h1>{{ post.title }}</h1>
+		{% if post.image %}
+		    	<img src="{{ post.image.url }}">
+		{% endif %}
 		<p>{{ post.text|linebreaks }}</p>
 		{% if user.is_authenticated %}
 		<h3 class="author">Автор: {{ post.author }}</h3>
